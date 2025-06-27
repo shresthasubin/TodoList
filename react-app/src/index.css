@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: hsla(0, 0%, 0%, 0.786);
+}
+
+.todo-container {
+    width: 20em;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.todo-container h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: rgba(245, 245, 245, 0.805);
+    letter-spacing: 1.2px;
+    text-shadow: -1px 4px 2px black;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+.input-container input[type = "text"] {
+    all: unset;
+    background-color: rgba(245, 245, 245, 0.805);
+    font-size: 1.02em;
+    padding: 6px;
+    font-weight: bold;
+    color: hsl(0, 0%, 47%);
+    border: none;
+    border-radius: 4px;
+    border: 2px solid hsl(0, 0%, 60%);
+}
+
+.input-container input[type = "text"]:focus {
+    border: 2px solid white;
+}
+
+
+.input-container button{
+    font-size: 1.02em;
+    padding: 6px 8px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.621);
+    transform: none;
+    transition: all 0.1s ease-in-out;
+}
+.input-container button:hover{
+    background-color: rgba(0, 0, 0, 0.884);
+}
+.input-container button:active {
+    transform: scale(0.8);
+}
+
+.todo-container ul li {
+    background-color: rgba(153, 153, 156, 0.371);
+    color: hsla(0, 0%, 96%, 0.775);
+    min-width: 22em;
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid white;
+    border-radius: 4px;
+    min-height: 3.5rem;
+    font-size: 1.2rem;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.todo-container ul li p {
+    width: 10rem;
+    word-break: break-all;
+}
+
+.todo-container ul li .upt-btn-el {
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.todo-container ul li .upt-btn-el button {
+    all: unset;
+    padding: 2px;
+    width: 20%;
+    font-size: 0.7em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid white;
+    font-weight: 600;
+}
+
+.todo-container ul li .upt-btn-el button:nth-child(1) {
+    background-color: rgba(64, 65, 65, 0.322);
+    transition: background-color 0.2s ease-in-out;
+}
+.todo-container ul li .upt-btn-el button:nth-child(3) {
+    background-color: rgba(64, 65, 65, 0.322);
+    transition: background-color 0.2s ease-in-out;
+}
+.todo-container ul li .upt-btn-el button:nth-child(4) {
+    background-color: rgba(64, 65, 65, 0.322);
+    transition: background-color 0.2s ease-in-out;
+}
+.todo-container ul li .upt-btn-el button:nth-child(1):hover {
+    background-color: hsl(0, 100%, 40%);
+}
+.todo-container ul li .upt-btn-el button:nth-child(3):hover {
+    background-color: hsl(291, 100%, 40%);
+}
+.todo-container ul li .upt-btn-el button:nth-child(4):hover {
+    background-color: hsl(234, 100%, 40%);
+}
+
